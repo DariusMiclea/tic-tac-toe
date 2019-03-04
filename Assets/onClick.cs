@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class onClick : MonoBehaviour {
 
-    static public int i = 0, j = 0;
+    static public int i = 0;
     public GameObject x, o, thisPlate;
     public bool checkClicked = false;
     private Vector3 pos;
-    bool gameWon = false;
-    static public char[,] table = new char[3,3];
-    int xCount = 0, oCount = 0;
+    public int thisVal = -1;
+    static public int[] table = new int[9];
     // Use this for initialization
     void Start () {
         pos = thisPlate.transform.position;
         pos.z = -1;
+        for(int j = 0; j < table.Length; j++)
+        {
+            table[j] = -1;
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(table[0,0] == 'x' && table[0,0] == table[0,1] && table[0, 1] == table [0, 2])
-        {
-            Debug.Log("X WON!!");
-        }
+        
     }
     void OnMouseDown()
     {
@@ -31,26 +31,45 @@ public class onClick : MonoBehaviour {
             Instantiate(x, pos, Quaternion.identity);
             
             checkClicked = true;
+            thisVal = 1;
             
-            table[j, i%3] = 'x';
-            Debug.Log(i);
-            Debug.Log(table[j, i%3]);
             i++;
-            if (i % 3 == 0)
-                j++;
+            
         }
         else if(i%2!=0 && !checkClicked)
         {
             Instantiate(o, pos, Quaternion.identity);
             
             checkClicked = true;
-            
-            table[j, i%3] = 'o';
-            Debug.Log(i);
-            Debug.Log(table[j,i%3]);
+            thisVal = 10;
             i++;
-            if (i % 3 == 0)
-                j++;
         }
+        
+        table[int.Parse(this.name)] = thisVal;
+        WinCheck(0, 1);
+        WinCheck(3, 1);
+        WinCheck(6, 1);
+        WinCheck(0, 3);
+        WinCheck(1, 3);
+        WinCheck(2, 3);
+        WinCheck(0, 4);
+        WinCheck(2, 2);
+
+    }
+
+    void WinCheck(int start, int iterator)
+    {
+        int sum = table[start];
+        int index = start;
+        for (int l = 0; l < 2; l++)
+        {
+            
+            index = index + iterator;
+            sum = sum + table[index];
+        }
+        if (sum == 3)
+            Debug.Log("X WON!!!");
+        else if(sum == 30)
+            Debug.Log("O WON!!!");
     }
 }

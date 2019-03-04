@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 202090298}
   - component: {fileID: 202090297}
   m_Layer: 0
-  m_Name: Quad (7)
+  m_Name: 5
   m_TagString: plate8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 202090295}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &202090298
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -394,7 +395,7 @@ GameObject:
   - component: {fileID: 217838130}
   - component: {fileID: 217838129}
   m_Layer: 0
-  m_Name: Quad (3)
+  m_Name: 7
   m_TagString: plate4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,6 +429,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 217838127}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &217838130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -588,7 +590,7 @@ GameObject:
   - component: {fileID: 374925597}
   - component: {fileID: 374925596}
   m_Layer: 0
-  m_Name: Quad (6)
+  m_Name: 2
   m_TagString: plate7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,6 +624,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 374925594}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &374925597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -814,7 +817,7 @@ GameObject:
   - component: {fileID: 1480339749}
   - component: {fileID: 1480339748}
   m_Layer: 0
-  m_Name: Quad (5)
+  m_Name: 1
   m_TagString: plate6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,6 +851,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 1480339746}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &1480339749
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -914,7 +918,7 @@ GameObject:
   - component: {fileID: 1482403665}
   - component: {fileID: 1482403664}
   m_Layer: 0
-  m_Name: Quad (8)
+  m_Name: 8
   m_TagString: plate9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -948,6 +952,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 1482403662}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &1482403665
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1144,7 +1149,7 @@ GameObject:
   - component: {fileID: 1570292919}
   - component: {fileID: 1570292918}
   m_Layer: 0
-  m_Name: Quad (4)
+  m_Name: 4
   m_TagString: plate5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1178,6 +1183,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 1570292916}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &1570292919
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1244,7 +1250,7 @@ GameObject:
   - component: {fileID: 1572522646}
   - component: {fileID: 1572522645}
   m_Layer: 0
-  m_Name: Quad (2)
+  m_Name: 6
   m_TagString: plate3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1278,6 +1284,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 1572522643}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &1572522646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1344,7 +1351,7 @@ GameObject:
   - component: {fileID: 1689666858}
   - component: {fileID: 1689666857}
   m_Layer: 0
-  m_Name: Quad (1)
+  m_Name: 0
   m_TagString: plate2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1378,6 +1385,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 1689666855}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &1689666858
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1560,7 +1568,7 @@ GameObject:
   - component: {fileID: 2131791972}
   - component: {fileID: 2131791971}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: 3
   m_TagString: plate1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1594,6 +1602,7 @@ MonoBehaviour:
   o: {fileID: 1124483200538974, guid: 3924c0ee9ccd3a447801b078f6603fa8, type: 2}
   thisPlate: {fileID: 2131791969}
   checkClicked: 0
+  thisVal: 0
 --- !u!23 &2131791972
 MeshRenderer:
   m_ObjectHideFlags: 0
