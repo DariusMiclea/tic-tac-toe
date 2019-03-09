@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/table.unity
+    guid: ba1946f40d6397643be6017a0cb2b7e5
+  - enabled: 1
+    path: Assets/WinO.unity
+    guid: 92575537ff024904d9de84c58283b0b5
+  - enabled: 1
+    path: Assets/WinX.unity
+    guid: 7890f96d616a5fa44b7aa42ab986017c
+  - enabled: 1
+    path: Assets/Draw.unity
+    guid: a5ad6aa5e07ccde4b893b868e9133df9

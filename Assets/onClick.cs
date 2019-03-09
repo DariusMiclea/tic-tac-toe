@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class onClick : MonoBehaviour {
 
@@ -55,6 +56,11 @@ public class onClick : MonoBehaviour {
         WinCheck(0, 4);
         WinCheck(2, 2);
 
+        if (i > 8)
+        {
+            i = 0;
+            SceneManager.LoadScene("Draw");
+        }
     }
 
     void WinCheck(int start, int iterator)
@@ -68,8 +74,23 @@ public class onClick : MonoBehaviour {
             sum = sum + table[index];
         }
         if (sum == 3)
-            Debug.Log("X WON!!!");
-        else if(sum == 30)
-            Debug.Log("O WON!!!");
+        {
+            i = 0;
+            SceneManager.LoadScene("WinX");
+
+        }
+        else if (sum == 30)
+        {
+            i = 0;
+            SceneManager.LoadScene("WinO");
+        }
+    }
+
+    void Draw()
+    {
+        for(int j = 0; j < 9; j++)
+        {
+            //if()
+        }
     }
 }
